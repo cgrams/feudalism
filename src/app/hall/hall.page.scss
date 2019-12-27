@@ -1,0 +1,25 @@
+.welcome-card {
+    height: 150vh;
+    overflow: hidden;
+    background: url(/assets/crusades.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.heroPic{
+    width: 50%;
+}
+.answer {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding:3px;
+    background: #5a5a5a;
+    padding: 2%;
+}
+.decipher{
+    font-size: 2em;
+}
+.linkHover{
+    cursor:pointer;
+}
