@@ -9,6 +9,8 @@ span.textClue {
     color: red;
     position: relative;
     top: 1px;
+        display: flex;
+    align-items: center;
 }
 input.native-input.sc-ion-input-md {
     background: #ffe2e2;
@@ -17,6 +19,7 @@ input.native-input.sc-ion-input-md {
 }
 span.textClue {
     padding-right: 5px;
+
 }
 .answersCourt p{
     font-weight: bold;
@@ -25,6 +28,12 @@ span.textClue {
 nput.native-input.sc-ion-input-md {
     background: #e8c5c5;
     border: 1px solid black;
+}
+
+.inputStyle{
+    background: white;
+    margin: 3px 0;
+    border: 1px solid;
 }
 .answersCourt {
     display: flex;
@@ -77,4 +86,6 @@ nput.native-input.sc-ion-input-md {
 }
 .animated.infinite {
   animation-iteration-count: infinite;
+    position: relative;
+    top: 10px;
 }
