@@ -23,3 +23,9 @@
 .linkHover{
     cursor:pointer;
 }
+
+@media only screen and (max-width: 600px) {
+.welcome-card {
+    height: 100vh;
+    }
+  }
