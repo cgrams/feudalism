@@ -11,6 +11,13 @@
      <div class="answer swing animated" [hidden]=ishidden>{{secretMessage}}</div>
 <br />
 
+
+<audio autoplay>
+  <source src="/assets/hall.mp3" type="audio/ogg">
+  <source src="/assets/hall.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        
     </ion-card>
     <ion-list lines="none">
       <ion-list-header>
@@ -19,7 +26,7 @@
 
       <ion-item (click)="originalState()" class="linkHover">
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label class="decipher">Image Needed to Decipher</ion-label>
+        <ion-label class="decipher animated infinite bounce">Decipher Image</ion-label>
       </ion-item>
 
       <ion-item (click)="changeState()" class="linkHover">
