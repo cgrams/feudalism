@@ -61,6 +61,8 @@ import { AlertController } from '@ionic/angular';
 export class HallPage {
     ishidden:boolean = true;
     currentState = 'initial';
+    hideMessage(){this.ishidden=true;}
+
     secretMessage:string;
     changeState(){ this.currentState = this.currentState === 'initial' ? 'final' : 'final'; }
     changeState1(){ this.currentState = this.currentState === 'initial' ? 'final1' : 'final1'; }
@@ -138,7 +140,11 @@ export class HallPage {
         let messageLogic3 = result.data.values[2];
         let addUpValues = messageLogic3 + messageLogic2 + messageLogic1;
         console.log(addUpValues + " this is the added up values");
-        if(addUpValues == 111 ){this.secretMessage = "Count the number of christians in the image and that is your first number. (It is considered a holy number)" ;}else{ this.secretMessage = "Try again..."}
+        if(addUpValues == 111 ){
+            this.secretMessage = "Count the number of christians in the image and that is your first number. (It is considered a holy number)" ;
+            this.currentState = this.currentState === 'initial' ? 'original' : 'original'; 
+        }else{ this.secretMessage = "Try again..."}
+
    
     }
 

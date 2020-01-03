@@ -8,7 +8,7 @@
 <ion-content>
     
     <ion-card [@changeDivSize]=currentState class="welcome-card">
-     <div class="answer swing animated" [hidden]=ishidden>{{secretMessage}}</div>
+     <div class="answer swing animated" [hidden]=ishidden>{{secretMessage}}<button (click)="hideMessage()" class="hideEx">x</button></div>
 <br />
 
 

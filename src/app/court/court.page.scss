@@ -1,7 +1,10 @@
 .sectionForText {
     margin: 1%;
-    grid-template-columns: 5% 25% 70%;
+    grid-template-columns: 5% 25% 68%;
     display: grid;
+}
+input.native-input.sc-ion-input-md {
+    padding: 12px;
 }
 span.textClue {
     font-family: fantasy;

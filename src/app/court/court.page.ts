@@ -24,7 +24,7 @@ export class CourtPage {
         const inputValue2 = event.target.value;
         if(inputValue2 == "sorry"){
             console.log('sorry works');
-            this.secondAnswerCourtHidden = "And then it's 5!";
+            this.secondAnswerCourtHidden = "The last number is 5!";
         }else{this.secondAnswerCourtHidden = "Keep trying";}
     }
 }
