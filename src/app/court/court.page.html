@@ -19,6 +19,10 @@
                 <ion-icon class="tada animated infinite" name="lock"></ion-icon> <span class="textClue">Forgive...</span> <ion-input class="inputStyle" placeholder=" Enter text" (keyup)="onKey1($event)"></ion-input>
                 <ion-icon class="tada animated infinite" name="lock"></ion-icon> <span class="textClue">I'm...</span> <ion-input class="inputStyle" (keyup)="onKey2($event)" placeholder=" Enter text"></ion-input>
         </div>
+
+
+
+
         <div class="answersCourt">
             <p>{{firstAnswerCourt}}</p>
             <br />
@@ -26,5 +30,11 @@
         </div>
     </div>
 
+
+    
+        <button ion-button (click)="hide()">Hide Div</button>
+
+    <div *ngIf="hideMe"> 
     <iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=09a7ea827bd1&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>
+    </div>
 </ion-content>

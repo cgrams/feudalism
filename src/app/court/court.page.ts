@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['court.page.scss']
 })
 export class CourtPage {
+
+    hideMe:boolean= true;
+
   constructor() {}
 
     firstAnswerCourt:string = "";
@@ -19,6 +22,15 @@ export class CourtPage {
                  
             }else{this.firstAnswerCourt = "Keep trying";}
     }
+
+
+    hide() {
+ 
+        console.log(33);
+
+        this.hideMe= !this.hideMe;
+    }
+
 
     onKey2(event){
         const inputValue2 = event.target.value;
