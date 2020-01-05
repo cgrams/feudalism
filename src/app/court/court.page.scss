@@ -1,3 +1,12 @@
+.hiddenButton{
+        background: url(/assets/plague.png);
+    background-position: center;
+    background-size: 100%;
+    width: 71px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
 .sectionForText {
     margin: 1%;
     grid-template-columns: 5% 25% 68%;

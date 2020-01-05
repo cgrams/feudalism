@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CourtPage {
 
-    hideMe:boolean= true;
-
+    hideMe:boolean= false;
+     count: number = 0;
   constructor() {}
 
     firstAnswerCourt:string = "";
@@ -25,10 +25,10 @@ export class CourtPage {
 
 
     hide() {
- 
-        console.log(33);
 
-        this.hideMe= !this.hideMe;
+        console.log(this.count++);
+       let newCount = this.count > 7 ? this.hideMe = true : this.hideMe = false;
+        //this.hideMe= !this.hideMe;
     }
 
 
