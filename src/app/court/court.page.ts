@@ -25,10 +25,12 @@ export class CourtPage {
 
 
     hide() {
-
-        console.log(this.count++);
-       let newCount = this.count > 7 ? this.hideMe = true : this.hideMe = false;
+       console.log(this.count++);
+        if(this.count>6){this.hideMe = true};
+       let newCount = this.count > 5 ? this.hideMe = true : this.hideMe = false;
         //this.hideMe= !this.hideMe;
+        
+
     }
 
 

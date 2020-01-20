@@ -10,7 +10,7 @@
     <div class="courtContentContainer">
         <h3>What did she say?</h3>
         <p>We can figure out some of her old English but...</p>
-        <p>We need to know what she said to determine if it was a virtous heroic deed of self defence or if the woman was acting out of evil.</p>
+        <p>We need to know what she said to determine if it was a virtous heroic deed of self defence or if the woman was doing something wrong.</p>
         <audio controls>
         <source src="/assets/forgivemeWeb.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -28,14 +28,20 @@
             <br />
             <p>{{secondAnswerCourtHidden}}</p>
         </div>
-            
-        <div class="hiddenButton" (click)="hide()"></div>
+        <!--
+        <div class="endOfGameLocks">
+            <div class="hiddenButton" (tap)="hide()" ></div>
+            <img class="ringPic" src="/assets/ringArosie.jpeg" />    
+
+            <div *ngIf="hideMe" class="iFramLinky">
+                <h2>If this classroom were run as a feudal system... look under the king's throne.</h2>
+                <audio controls>
+                <source src="/assets/kingsThrone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        -->
     </div>
 
-
-
-
-    <div *ngIf="hideMe"> 
-    <iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=09a7ea827bd1&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>
-    </div>
 </ion-content>
